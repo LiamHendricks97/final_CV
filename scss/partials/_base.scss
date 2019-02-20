@@ -1,0 +1,46 @@
+
+
+.body {
+    &-header {
+        background: url(../images/cover.jpeg) no-repeat;
+        background-size: cover;
+
+        .cover {
+            position: absolute;
+        }
+        .header-text {
+            position: relative;
+            font-size: 6.25rem;
+            text-align: center;
+            margin: 0;
+            top: 12vmin;
+            color: white;
+            z-index: 10;
+        }
+        .left {
+            width: 98vw;
+            height: 100vh;
+            background-color: #000111;
+            margin: 0;
+            top: 0%;
+            clip-path: polygon(28.71vw 99.04vh, 70.61vw 0.53vh, 98.2vw 0.67vh, 97.98vw 98.8vh);
+        }
+        .right {
+            background-color: black;
+            height: 100vh;
+            width: 98vw;
+            clip-path: polygon(88.76vw 1.07vh, 80.36vw 29.59vh, 9.22vw 29.99vh, 18.25vw 0.28vh);
+            top: 7vh;
+        }
+        .center {
+            clip-path: polygon(86.77vw 29.21vh, 18.00vw 29.60vh, 9.24vw 21.2vh, 80.22vw 21.33vh);
+            height: 100vh;
+            width: 98vw;
+            background: #4a4a4a;
+        }
+
+    }
+}
+
+
+// add third thingie above
