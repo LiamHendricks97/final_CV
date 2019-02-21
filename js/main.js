@@ -1,27 +1,20 @@
 'use strict';
-// hamburger navbar mega*************************
-// variables******************************
-let aside       =       document.querySelector("#aside");
-let aside_on    =       document.querySelector(".aside");   
-let btn         =       document.getElementById("navBtn")
+// let x = window.pageYOffset
+// EXTREMELY IMPORTANT!! DO NOT LET THE ABOVE OCCUR.
 
-// event listners**********************
-btn.addEventListener("click", navExpand)
-
-document.querySelector(".body-header").addEventListener("click", navRetract);
-document.querySelector(".body-main").addEventListener("click", navRetract);
-document.querySelector(".body-footer").addEventListener("click", navRetract);
+let x = document.querySelector(".top-nav").offsetHeight;
+let y = document.querySelector(".header").offsetHeight;
+let z = document.querySelector("#side-nav");
 
 
-// fucntions***************************
-function navExpand() {
-    aside.classList.toggle("body-aside_on");
-    aside.classList.toggle("body-aside");
-}
-function navRetract() {
-    aside.classList.replace("body-aside_on", "body-aside");
-}
+window.addEventListener("scroll", function navExtend() {
+    if (window.pageYOffset >= y + x ) {
+        z.classList.replace("side-nav", "side-nav-on");
+    } else {
+        z.classList.replace("side-nav-on", "side-nav");
+    }
+})
 
 
-
-let test = window
+console.log(window.pageYOffset);
+console.log(y);
