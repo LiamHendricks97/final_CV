@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -12,7 +14,7 @@ body {
     display: grid;
     grid-template: 
         'body-header        body-header'        100vh
-        'body-aside         body-main'          100vh
+        'body-main          body-main'          100vh
         'body-footer        body-footer'        20vh / 10vw auto;
 
     // header container******
@@ -24,19 +26,32 @@ body {
 
     // aside container*******
     &-aside {
-        grid-area: body-aside;
+        width: 0rem;
+        height: 100vh;
+        background-color: red;
+        position: fixed;
+        transition: all 1s;
+    }   
+    &-aside_on {
+        width: 10rem;
+        height: 100vh;
+        background-color: red;
+        position: fixed;
+        transition: all 1s;
     }   
     
     
     // main container********
     &-main {
         grid-area: body-main;
+        background-color: blueviolet;
     }
 
 
     // footer container******
     &-footer {
         grid-area: body-footer;
+        background: green;
     }
 
 

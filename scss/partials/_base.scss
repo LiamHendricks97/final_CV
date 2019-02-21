@@ -8,16 +8,8 @@
         .cover {
             position: absolute;
         }
-        .header-text {
-            position: relative;
-            font-size: 6.25rem;
-            text-align: center;
-            margin: 0;
-            top: 12vmin;
-            color: white;
-            z-index: 10;
-        }
-        .left {
+        
+        .right-cover {
             width: 98vw;
             height: 100vh;
             background-color: #000111;
@@ -25,22 +17,48 @@
             top: 0%;
             clip-path: polygon(28.71vw 99.04vh, 70.61vw 0.53vh, 98.2vw 0.67vh, 97.98vw 98.8vh);
         }
-        .right {
+        .first-side {
             background-color: black;
             height: 100vh;
             width: 98vw;
             clip-path: polygon(88.76vw 1.07vh, 80.36vw 29.59vh, 9.22vw 29.99vh, 18.25vw 0.28vh);
             top: 7vh;
+
+            .header-text {
+                position: relative;
+                font-size: 6.25rem;
+                text-align: center;
+                margin: 0;
+                top: 6vmin;
+                color: white;
+                z-index: 10;
+            }
         }
-        .center {
-            clip-path: polygon(86.77vw 29.21vh, 18.00vw 29.60vh, 9.24vw 21.2vh, 80.22vw 21.33vh);
+        .second-side {
+            clip-path: polygon(87.89vw 44.68vh, 18.09vw 45.2vh, 9.24vw 37.2vh, 80.22vw 36.4vh);
             height: 100vh;
             width: 98vw;
             background: #4a4a4a;
+            top: 0;
+        }
+        .third-side {
+            clip-path: polygon(88.17vw 44.67vh, 80.59vw 36.94vh, 88.53vw 8.53vh);
+            height: 100vh;
+            width: 98vw;
+            background: #fff;
+            top: 0%;
+        }
+        .secondary-text {
+            font-size: 4rem;
+            text-align: center;
+            top: 10vh;
+            /* margin: 32vh 0 0 0; */
+            z-index: 11;
+            color: white;
+            position: absolute;
+            right: 5vw;
+            top: 75vh;
         }
 
     }
 }
-
-
-// add third thingie above
