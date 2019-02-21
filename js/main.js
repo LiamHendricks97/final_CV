@@ -21,3 +21,7 @@ function navExpand() {
 function navRetract() {
     aside.classList.replace("body-aside_on", "body-aside");
 }
+
+
+
+let test = window
