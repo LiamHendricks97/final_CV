@@ -4,23 +4,23 @@
 html {
     scroll-behavior: smooth;
 }
-body {
-    margin: 0;
-}
-
 
 // body container********************************
 .body {
     display: grid;
     grid-template: 
-        'top-nav            top-nav'            5vh
+        'top-nav            top-nav'            auto
         'header             header'             100vh
-        'main               main'               100vh
+        'main               main'               auto
         'footer             footer'             20vh / 10vw auto;
+
+    background-color: #000000;
+    margin: 0;
 
 // header container********************
     .header {
         grid-area: header;
+        height: auto;
     }
 
 // aside container*******--------------
@@ -34,6 +34,8 @@ body {
     .main {
         grid-area: main;
         background-color: blueviolet;
+        margin: 0 3.5rem;
+        padding: 0 1rem ;
     }
 
 
