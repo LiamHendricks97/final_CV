@@ -8,7 +8,13 @@
   flex-wrap: wrap;
   padding: 0; }
   .top-nav ul li {
-    line-height: 10vh; }
+    line-height: 10vh;
+    font-size: 2rem;
+    width: 24.7vw;
+    text-align: center;
+    transition: 50ms all; }
+    .top-nav ul li:hover {
+      background-color: #363636; }
 
 .side-nav {
   position: fixed;
@@ -51,7 +57,14 @@
   .header-secondary-text {
     font-size: 5rem;
     text-align: right;
-    margin: 0 5vw 0 0; }
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 10%, #000000 11%, #000000 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .header-about {
+    height: 10px;
+    width: 10px;
+    position: relative; }
 
 .side-nav ul, .side-nav-on ul, .side-nav-on:hover ul {
   display: flex;
