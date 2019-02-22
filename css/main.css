@@ -29,12 +29,15 @@
     .side-nav-on a {
       color: #000000;
       transition: all 1s; }
+    .side-nav-on .fas {
+      font-size: 1.875rem;
+      text-decoration: none; }
     .side-nav-on:hover {
       position: fixed;
       background-color: red;
       height: 100vh;
-      width: 10rem;
-      transition: 1s all; }
+      transition: 1s all;
+      width: 13rem; }
   .side-nav li {
     font-size: 10px; }
 

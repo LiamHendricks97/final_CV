@@ -48,14 +48,18 @@
                 color: #000000;
                 transition: all 1s;
             }
+            .fas {
+                font-size: 1.875rem;
+                text-decoration: none;
+            }
         
 
         &:hover {
             position: fixed;
             background-color: red;
             height: 100vh;
-            width: 10rem;
             transition: 1s all;
+            width: 13rem;
 
             @extend %repeat-side-nav-ul;
         }
