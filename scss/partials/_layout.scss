@@ -1,49 +1,29 @@
-* {
-    box-sizing: border-box;
-}
-html {
-    scroll-behavior: smooth;
-}
 
-// body container********************************
+
 .body {
     display: grid;
-    grid-template: 
-        'top-nav            top-nav'            auto
-        'header             header'             100vh
-        'main               main'               auto    
-        'footer             footer'             20vh / 10vw auto;
+    grid-template:
+    'cover      cover'      100vh
+    'aside      content'    100vh
+    'footer     footer'     20vh / 0vw auto; 
+}
 
-    background-color: #000000;
-    margin: 0;
+.cover {
+    grid-area: cover;
 
-// header container********************
-    .header {
-        grid-area: header;
-        height: auto;
-    }
+    background-color: #ffffff;
 
-// aside container*******--------------
-    .top-nav {
-        grid-area: top-nav;
-    }
+}
 
+.aside {
+    grid-area: aside;   
+}
 
-    
-// main container**********************
-    .main {
-        grid-area: main;
-        background-color: blueviolet;
-        margin: 0 3.5rem;
-        padding: 0 1rem ;
-    }
+.content {
+    grid-area: content;
+}
 
-
-// footer container********************
-    .footer {
-        grid-area: footer;
-        background: green;
-    }
-
-
+.footer {
+    grid-area: footer;
+    background-color: violet;
 }
