@@ -11,8 +11,6 @@
 .cover {
     grid-area: cover;
 
-    background-color: #ffffff;
-
 }
 
 .aside {
@@ -21,9 +19,10 @@
 
 .content {
     grid-area: content;
+    background-color: blue;
 }
 
 .footer {
     grid-area: footer;
-    background-color: violet;
+    background-color: yellow;
 }

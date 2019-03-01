@@ -7,9 +7,8 @@
         h1 {
             color: #000000;
             font-size:  17vmin;
-            font-family: 'Cinzel', serif;
-            font-weight: lighter;
-            text-align: right;
+            font-family: serif;
+            text-align: center;
             padding: 0 4vw 0 0;
 
             //  margin: 0 0 10px 0; 
@@ -17,9 +16,36 @@
         h2 {
             color: #000000;
             font-size: 8vmin;
-            font-family: 'Cinzel', serif;
-            font-weight: lighter;
-            text-align: right;
+            font-family: serif;
+            text-align: center;
             padding: 0 4vw 0 0;
+        }
+        &-about {
+            height: 20rem;
+            width: 20rem;
+            // float: right;
+            // margin: 8vh 4vw 0 0;
+            margin: 5rem auto;
+            text-align: center;
+            background-color: #fff;
+            padding: 0.9375rem;
+        }
+        .btn-container{
+            margin: 0 auto;
+            max-width: max-content;
+            
+            .btn {
+                margin: 1.625rem 0.625rem 0 0;
+                float: left;
+            }
+        }
+    }
+
+
+    .content {
+        h1 {
+            font-size: 3.125rem;
+            text-align: center;
+            margin: 0.625rem auto;
         }
     }
