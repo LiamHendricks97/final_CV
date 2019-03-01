@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  margin: 0; }
+  margin: 0;
+  font-weight: 100; }
 
 .cover h1 {
   color: #000000;
@@ -8,26 +9,27 @@
   font-family: serif;
   text-align: center;
   padding: 0 4vw 0 0;
-  z-index: 10; }
+  z-index: 10;
+  font-weight: 100; }
 .cover h2 {
   color: #000000;
   font-size: 5vmin;
   font-family: serif;
   text-align: center;
   padding: 0 4vw 0 0;
-  z-index: 10; }
+  z-index: 10;
+  font-weight: 100; }
 .cover-about {
   height: 20rem;
   width: 20rem;
-  margin: 5rem auto;
+  margin: 9vh auto;
   text-align: center;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
   padding: 0.9375rem;
   z-index: 10; }
 .cover .test {
-  border-radius: 0 0 800px 800px;
+  border-radius: 0rem 0rem 247vmax 0;
   background-color: #ffffff;
-  max-width: max-content;
   height: 100vh;
   margin: 0 auto;
   text-align: center; }
@@ -38,13 +40,29 @@
     margin: 1.625rem 0.625rem 0 0;
     float: left; }
 
+.content h3 {
+  font-size: 1.9375rem; }
+.content td {
+  vertical-align: top;
+  padding: 5vw; }
 .content .article-header {
-  font-size: 3.125rem;
+  font-size: 3.625rem;
   text-align: center;
-  margin: 0.625rem auto; }
+  margin: 0.625rem auto;
+  color: white; }
 .content .education-flex {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  color: white;
+  flex-wrap: wrap; }
+  .content .education-flex ul {
+    padding: 0; }
+    .content .education-flex ul li {
+      margin: 5vh 5vw; }
+.content .skills-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
 
 .btn {
   background-color: #ffffff;
@@ -61,7 +79,7 @@
 
 .body {
   display: grid;
-  grid-template: 'cover      cover'      100vh 'aside      content'    100vh 'footer     footer'     20vh / 0vw auto; }
+  grid-template: 'cover      cover'      100vh 'aside      content'    auto 'footer     footer'     20vh / 0vw auto; }
 
 .cover {
   grid-area: cover;
@@ -72,7 +90,7 @@
 
 .content {
   grid-area: content;
-  background-color: blue;
+  background-color: black;
   display: grid;
   grid-template: 'education'     auto 'skills'        auto 'portfolio'     auto / auto; }
   .content .education {

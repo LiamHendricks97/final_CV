@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-weight: 100;
 }
 
     .cover {
@@ -11,6 +12,7 @@
             text-align: center;
             padding: 0 4vw 0 0;
             z-index: 10;
+            font-weight: 100
 
             //  margin: 0 0 10px 0; 
         }
@@ -21,22 +23,23 @@
             text-align: center;
             padding: 0 4vw 0 0;
             z-index: 10;
+            font-weight: 100;
         }
         &-about {
             height: 20rem;
             width: 20rem;
             // float: right;
             // margin: 8vh 4vw 0 0;
-            margin: 5rem auto;
+            margin: 9vh auto;
             text-align: center;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0);
             padding: 0.9375rem;
             z-index: 10;
         }
         .test {
-            border-radius: 0 0 800px 800px;
+            border-radius: 0rem 0rem 247vmax 0;
             background-color: #ffffff;
-            max-width: max-content;
+            // max-width: max-content;
             // width: 100px;
             height: 100vh;
             // z-index: -1  0;
@@ -57,13 +60,39 @@
 
 
     .content {
+        h3 {
+            font-size: 1.9375rem;
+        }
+        td {
+            vertical-align: top;
+            padding: 5vw;
+        }
         .article-header  {
-            font-size: 3.125rem;
+            font-size: 3.625rem;
             text-align: center;
             margin: 0.625rem auto;
+            color: white;
         }
+        
         .education-flex {
             display: flex;
             justify-content: space-evenly;
+            color: white; 
+            flex-wrap: wrap;    
+            
+            ul {
+                padding: 0;
+                // list-style: none;  
+                
+                li {
+                    margin: 5vh 5vw;
+                }
+            }
+        }
+        .skills-container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            
         }
     }
