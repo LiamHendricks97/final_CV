@@ -7,20 +7,30 @@
   font-size: 17vmin;
   font-family: serif;
   text-align: center;
-  padding: 0 4vw 0 0; }
+  padding: 0 4vw 0 0;
+  z-index: 10; }
 .cover h2 {
   color: #000000;
-  font-size: 8vmin;
+  font-size: 5vmin;
   font-family: serif;
   text-align: center;
-  padding: 0 4vw 0 0; }
+  padding: 0 4vw 0 0;
+  z-index: 10; }
 .cover-about {
   height: 20rem;
   width: 20rem;
   margin: 5rem auto;
   text-align: center;
   background-color: #fff;
-  padding: 0.9375rem; }
+  padding: 0.9375rem;
+  z-index: 10; }
+.cover .test {
+  border-radius: 0 0 800px 800px;
+  background-color: #ffffff;
+  max-width: max-content;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center; }
 .cover .btn-container {
   margin: 0 auto;
   max-width: max-content; }
@@ -28,10 +38,13 @@
     margin: 1.625rem 0.625rem 0 0;
     float: left; }
 
-.content h1 {
+.content .article-header {
   font-size: 3.125rem;
   text-align: center;
   margin: 0.625rem auto; }
+.content .education-flex {
+  display: flex;
+  justify-content: space-evenly; }
 
 .btn {
   background-color: #ffffff;
@@ -40,21 +53,34 @@
   width: 7.5rem;
   height: 2.5rem;
   text-align: center;
-  padding-top: 0.4375rem; }
+  padding-top: 0.4375rem;
+  transition: 350ms all; }
+  .btn:hover {
+    background-color: black;
+    color: white; }
 
 .body {
   display: grid;
   grid-template: 'cover      cover'      100vh 'aside      content'    100vh 'footer     footer'     20vh / 0vw auto; }
 
 .cover {
-  grid-area: cover; }
+  grid-area: cover;
+  background-color: black; }
 
 .aside {
   grid-area: aside; }
 
 .content {
   grid-area: content;
-  background-color: blue; }
+  background-color: blue;
+  display: grid;
+  grid-template: 'education'     auto 'skills'        auto 'portfolio'     auto / auto; }
+  .content .education {
+    grid-area: education; }
+  .content .skills {
+    grid-area: skills; }
+  .content .portfolio {
+    grid-area: portfolio; }
 
 .footer {
   grid-area: footer;

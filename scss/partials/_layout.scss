@@ -10,7 +10,7 @@
 
 .cover {
     grid-area: cover;
-
+    background-color: black;
 }
 
 .aside {
@@ -20,9 +20,27 @@
 .content {
     grid-area: content;
     background-color: blue;
+
+    display: grid;
+    grid-template:
+        'education'     auto
+        'skills'        auto
+        'portfolio'     auto / auto;
+
+    .education {
+        grid-area: education;
+    }
+    .skills {
+        grid-area: skills;
+    }
+    .portfolio {
+        grid-area: portfolio;
+    }
 }
 
 .footer {
     grid-area: footer;
     background-color: yellow;
 }
+
+

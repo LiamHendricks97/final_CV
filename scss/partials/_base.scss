@@ -10,15 +10,17 @@
             font-family: serif;
             text-align: center;
             padding: 0 4vw 0 0;
+            z-index: 10;
 
             //  margin: 0 0 10px 0; 
         }
         h2 {
             color: #000000;
-            font-size: 8vmin;
+            font-size: 5vmin;
             font-family: serif;
             text-align: center;
             padding: 0 4vw 0 0;
+            z-index: 10;
         }
         &-about {
             height: 20rem;
@@ -29,6 +31,18 @@
             text-align: center;
             background-color: #fff;
             padding: 0.9375rem;
+            z-index: 10;
+        }
+        .test {
+            border-radius: 0 0 800px 800px;
+            background-color: #ffffff;
+            max-width: max-content;
+            // width: 100px;
+            height: 100vh;
+            // z-index: -1  0;
+            // position: absolute;
+            margin: 0 auto;
+            text-align: center;
         }
         .btn-container{
             margin: 0 auto;
@@ -43,9 +57,13 @@
 
 
     .content {
-        h1 {
+        .article-header  {
             font-size: 3.125rem;
             text-align: center;
             margin: 0.625rem auto;
+        }
+        .education-flex {
+            display: flex;
+            justify-content: space-evenly;
         }
     }
