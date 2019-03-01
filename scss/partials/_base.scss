@@ -33,7 +33,7 @@
             margin: 9vh auto;
             text-align: center;
             background-color: rgba(255, 255, 255, 0);
-            padding: 0.9375rem;
+            padding: 1.875rem;
             z-index: 10;
         }
         .test {
@@ -74,14 +74,18 @@
             color: white;
         }
         
+
+        
         .education-flex {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: end;
             color: white; 
             flex-wrap: wrap;    
+
             
             ul {
                 padding: 0;
+                // justify-items: 
                 // list-style: none;  
                 
                 li {
@@ -89,10 +93,23 @@
                 }
             }
         }
+        @media only screen and (max-width:587px){ 
+            .education-flex {
+                display: flex;
+                justify-content: space-evenly;
+                color: white;
+                flex-wrap: wrap;
+            }    
+        }
         .skills-container {
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
-            
+            border-radius: 18vmax 0vmax 6vmax 0vmax;
+            background-color: white;
+        }
+        .skills {
+            border-radius: 21vmax 0vmax 6vmax 0vmax;
+            background-color: white;
         }
     }
