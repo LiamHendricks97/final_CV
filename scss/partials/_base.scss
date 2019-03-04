@@ -62,10 +62,11 @@
     .content {
         h3 {
             font-size: 1.9375rem;
+            text-align: left;
+            padding-left: 10vw; 
         }
-        td {
-            vertical-align: top;
-            padding: 5vw;
+        .test123 {
+            width: 40vmax;
         }
         .article-header  {
             font-size: 3.625rem;
@@ -78,7 +79,7 @@
         
         .education-flex {
             display: flex;
-            justify-content: end;
+            justify-content: center;
             color: white; 
             flex-wrap: wrap;    
 
@@ -89,7 +90,7 @@
                 // list-style: none;  
                 
                 li {
-                    margin: 5vh 5vw;
+                    margin: 5vh 5vw 0 11vw;
                 }
             }
         }
@@ -111,5 +112,29 @@
         .skills {
             border-radius: 21vmax 0vmax 6vmax 0vmax;
             background-color: white;
+            margin-top: 4.375rem;
         }
+        .imgport-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .imgport {
+                height: 30vmax;
+                width: 30vmax;
+                background-color: red;  
+                border: solid black 2px; 
+                margin-top: 2.6875rem      
+            }
+        }
+    }   
+
+.fab {
+    transition: 250ms all;
+    color: black;
+    font-size: 15.625rem;
+    
+
+    &:hover {
+        color: red;
     }
+}

@@ -54,10 +54,11 @@
     float: left; }
 
 .content h3 {
-  font-size: 1.9375rem; }
-.content td {
-  vertical-align: top;
-  padding: 5vw; }
+  font-size: 1.9375rem;
+  text-align: left;
+  padding-left: 10vw; }
+.content .test123 {
+  width: 40vmax; }
 .content .article-header {
   font-size: 3.625rem;
   text-align: center;
@@ -65,13 +66,13 @@
   color: white; }
 .content .education-flex {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   color: white;
   flex-wrap: wrap; }
   .content .education-flex ul {
     padding: 0; }
     .content .education-flex ul li {
-      margin: 5vh 5vw; }
+      margin: 5vh 5vw 0 11vw; }
 @media only screen and (max-width: 587px) {
   .content .education-flex {
     display: flex;
@@ -86,7 +87,25 @@
   background-color: white; }
 .content .skills {
   border-radius: 21vmax 0vmax 6vmax 0vmax;
-  background-color: white; }
+  background-color: white;
+  margin-top: 4.375rem; }
+.content .imgport-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .content .imgport-container .imgport {
+    height: 30vmax;
+    width: 30vmax;
+    background-color: red;
+    border: solid black 2px;
+    margin-top: 2.6875rem; }
+
+.fab {
+  transition: 250ms all;
+  color: black;
+  font-size: 15.625rem; }
+  .fab:hover {
+    color: red; }
 
 .body {
   display: grid;
