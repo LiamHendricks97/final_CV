@@ -1,5 +1,5 @@
 
-
+// css grid--body**************************************************************
 .body {
     display: grid;
     grid-template:
@@ -19,7 +19,7 @@
 
 .content {
     grid-area: content;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
 
     display: grid;
     grid-template:
@@ -40,7 +40,7 @@
 
 .footer {
     grid-area: footer;
-    background-color: yellow;
+    background-color: #ffffff;
 }
 
 

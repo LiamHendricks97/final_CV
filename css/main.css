@@ -37,10 +37,10 @@
   width: 20rem;
   margin: 9vh auto;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #ffffff00;
   padding: 1.875rem;
   z-index: 10; }
-.cover .test {
+.cover .cover-circle {
   border-radius: 0rem 0rem 247vmax 0;
   background-color: #ffffff;
   height: 100vh;
@@ -53,21 +53,21 @@
     margin: 1.625rem 0.625rem 0 0;
     float: left; }
 
-.content h3 {
-  font-size: 1.9375rem;
-  text-align: left;
-  padding-left: 10vw; }
-.content .test123 {
+.content .column-education {
   width: 40vmax; }
 .content .article-header {
   font-size: 3.625rem;
   text-align: center;
   margin: 0.625rem auto;
-  color: white; }
+  color: #ffffff; }
+.content h3 {
+  font-size: 1.9375rem;
+  text-align: left;
+  padding-left: 10vw; }
 .content .education-flex {
   display: flex;
   justify-content: center;
-  color: white;
+  color: #ffffff;
   flex-wrap: wrap; }
   .content .education-flex ul {
     padding: 0; }
@@ -77,17 +77,17 @@
   .content .education-flex {
     display: flex;
     justify-content: space-evenly;
-    color: white;
+    color: #ffffff;
     flex-wrap: wrap; } }
 .content .skills-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   border-radius: 18vmax 0vmax 6vmax 0vmax;
-  background-color: white; }
+  background-color: #ffffff; }
 .content .skills {
   border-radius: 21vmax 0vmax 6vmax 0vmax;
-  background-color: white;
+  background-color: #ffffff;
   margin-top: 4.375rem; }
 .content .imgport-container {
   display: flex;
@@ -96,16 +96,33 @@
   .content .imgport-container .imgport {
     height: 30vmax;
     width: 30vmax;
-    background-color: red;
-    border: solid black 2px;
+    background-color: #ff0000;
+    border: solid #000000 2px;
     margin-top: 2.6875rem; }
 
 .fab {
   transition: 250ms all;
-  color: black;
+  color: #000000;
   font-size: 15.625rem; }
   .fab:hover {
-    color: red; }
+    color: #ff0000; }
+
+.htmlogo-container {
+  z-index: 2;
+  position: relative; }
+
+.retract-box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  z-index: 1; }
+
+.extend-box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute; }
 
 .body {
   display: grid;
@@ -120,7 +137,7 @@
 
 .content {
   grid-area: content;
-  background-color: black;
+  background-color: #000000;
   display: grid;
   grid-template: 'education'     auto 'skills'        auto 'portfolio'     auto / auto; }
   .content .education {
@@ -132,6 +149,6 @@
 
 .footer {
   grid-area: footer;
-  background-color: yellow; }
+  background-color: #ffffff; }
 
 /*# sourceMappingURL=main.css.map */

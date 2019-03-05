@@ -3,7 +3,7 @@
     margin: 0;
     font-weight: 100;
 }
-
+// cover***********************************************************************
     .cover {
         h1 {
             color: #000000;
@@ -13,8 +13,6 @@
             padding: 0 4vw 0 0;
             z-index: 10;
             font-weight: 100
-
-            //  margin: 0 0 10px 0; 
         }
         h2 {
             color: #000000;
@@ -28,22 +26,17 @@
         &-about {
             height: 20rem;
             width: 20rem;
-            // float: right;
-            // margin: 8vh 4vw 0 0;
             margin: 9vh auto;
             text-align: center;
-            background-color: rgba(255, 255, 255, 0);
+            background-color: #ffffff00;
             padding: 1.875rem;
             z-index: 10;
         }
-        .test {
+        .cover-circle {
             border-radius: 0rem 0rem 247vmax 0;
             background-color: #ffffff;
             // max-width: max-content;
-            // width: 100px;
             height: 100vh;
-            // z-index: -1  0;
-            // position: absolute;
             margin: 0 auto;
             text-align: center;
         }
@@ -58,37 +51,32 @@
         }
     }
 
-
+// content*********************************************************************
     .content {
-        h3 {
-            font-size: 1.9375rem;
-            text-align: left;
-            padding-left: 10vw; 
-        }
-        .test123 {
+        .column-education {
             width: 40vmax;
         }
         .article-header  {
             font-size: 3.625rem;
             text-align: center;
             margin: 0.625rem auto;
-            color: white;
+            color: #ffffff;
         }
         
-
         
+        // education*********************************************************
+            h3 {
+                font-size: 1.9375rem;
+                text-align: left;
+                padding-left: 10vw; 
+            }
         .education-flex {
             display: flex;
             justify-content: center;
-            color: white; 
+            color: #ffffff; 
             flex-wrap: wrap;    
-
-            
             ul {
                 padding: 0;
-                // justify-items: 
-                // list-style: none;  
-                
                 li {
                     margin: 5vh 5vw 0 11vw;
                 }
@@ -98,22 +86,24 @@
             .education-flex {
                 display: flex;
                 justify-content: space-evenly;
-                color: white;
+                color: #ffffff;
                 flex-wrap: wrap;
             }    
         }
+// skills************************************************************
         .skills-container {
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
             border-radius: 18vmax 0vmax 6vmax 0vmax;
-            background-color: white;
+            background-color: #ffffff;
         }
         .skills {
             border-radius: 21vmax 0vmax 6vmax 0vmax;
-            background-color: white;
+            background-color: #ffffff;
             margin-top: 4.375rem;
         }
+// portfolio*********************************************************
         .imgport-container {
             display: flex;
             flex-wrap: wrap;
@@ -121,8 +111,8 @@
             .imgport {
                 height: 30vmax;
                 width: 30vmax;
-                background-color: red;  
-                border: solid black 2px; 
+                background-color: #ff0000;  
+                border: solid #000000 2px; 
                 margin-top: 2.6875rem      
             }
         }
@@ -130,11 +120,29 @@
 
 .fab {
     transition: 250ms all;
-    color: black;
+    color: #000000;
     font-size: 15.625rem;
-    
-
     &:hover {
-        color: red;
+        color: #ff0000;
     }
+}
+
+
+.htmlogo-container {
+    z-index: 2;
+    position: relative;
+}
+
+.retract-box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    z-index: 1;
+}
+.extend-box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
 }
